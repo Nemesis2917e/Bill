@@ -1,0 +1,191 @@
+/* Reset styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* General styles */
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #b0d4f1;
+  padding: 1rem 5%;
+}
+
+.logo h1 {
+  font-size: 1.8rem;
+  margin-bottom: 0.2rem;
+}
+
+.logo p {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.nav ul li {
+  margin: 0 1rem;
+}
+
+.nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+.nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Hero Section */
+.hero-image img {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  display: block;
+  margin: 1rem auto;
+  border-radius: 10px;
+}
+
+/* Main Content */
+.content {
+  padding: 2rem 5%;
+}
+
+/* Grid */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+}
+
+.grid-item {
+  background: #fff;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+a:link {
+  text-decoration: none;
+  color: darkblue;
+}
+
+a:visited {
+  color: purple;
+}
+
+a:hover {
+  color: blue;
+}
+
+/* Typography */
+h1 {
+  padding-left: 5%;
+}
+
+h3 {
+  font-size: 90%;
+}
+
+p {
+  font-size: 80%;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .nav ul {
+    flex-direction: column;
+    margin-top: 1rem;
+  }
+
+  .nav ul li {
+    margin: 0.5rem 0;
+  }
+
+  h1 {
+    padding-left: 0;
+  }
+}
+
+
+@media (max-width:375px) {
+
+html {
+  font-size: 14px;
+}
+  
+.header {
+
+padding: 1rem 2%;
+
+}
+
+.logo h1 {
+
+  font-size: 1.5rem;
+}
+
+.nav ul {
+ flex-direction: column;
+
+}
+
+.hero-image img {
+
+max-width: 100%;
+border-radius: 5px;
+}
+
+.content {
+  padding: 1rem 2%;
+}
+
+.grid {
+
+grid-template-columns: 1fr 1fr;
+
+gap: 0.5rem;
+}
+
+
+.grid-item {
+  padding: 0.5rem;
+}
+
+h1 {
+  font-size: 1.2rem;
+}
+
+p {
+
+font-size: 0.75rem;
+
+}
+}
